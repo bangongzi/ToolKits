@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function addVote()
+{
+	setInterval(function(){
+		/**let xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4) {
+				if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
+					console.log(xhr.responseText);
+				} else {
+					console.log("Request was unsuccessful: " + xhr.status)
+				}
+			}
+		}
+		xhr.open("get", "https://activity.cqcb.com/shangyou_activity/2022h2/2022XLBT/detail?id=201&type=2", true);
+		xhr.send(null); */
+		var i = document.getElementById("main");
+		i.setAttribute("src","https://activity.cqcb.com/shangyou_activity/2022h2/2022XLBT/detail?id=201&type=2");
+	}, 1000);
+}
+</script>
+</head>
+<body>
+<input type="button" value="点击开始" onclick="addVote()" />
+<div>
+<iframe src="https://activity.cqcb.com/shangyou_activity/2022h2/2022XLBT/detail?id=201&type=2" id="main" style="height:100%;width:100%;">
+</iframe>
+</div>
+</body
+</html>
